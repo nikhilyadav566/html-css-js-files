@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes Selector</title>
+
+    <style>
+
+        div{
+            border:1px solid black;
+            border-width: 2px;
+            width:400px;
+            height:400px;
+            background-color: rgba(255, 0, 0, 0.262);
+        }
+
+        h1{
+            text-align: center;
+        }
+        
+        p{  
+            margin-top: 40px;
+            margin-left: 10px;
+            color:rgb(30, 0, 255)
+
+        
+        }
+
+        button{
+                margin-top:50px;
+                margin-left:10px;
+                color: brown;
+                background-color: darkblue;
+                width: 150px;
+                height: 40px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: medium;
+            }   
+
+        button:hover{
+            color:chartreuse;
+            background-color: cadetblue;
+        }
+
+        #text{
+            margin-left: 15px;
+            margin-right: 10px;
+            color: darkred;
+            background-color: aqua;
+            width:200px;;
+            height:40px;
+            font-size: 20px;
+        }
+        #text:hover{
+            background-color: burlywood;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div>
+
+        <h1><mark>Pseudo-classes Selector</mark></h1>
+        <p>A Css pseudo-class is a keyword added to a selector that specifies a state of the selected elements .</p>
+        <p>For example, : hover can be used to change a button's color when the user's pointer hovers over it.</p>
+        <br>
+        <button style>Curser move on me</button>
+        <input type="text" id="text" placeholder="Click here">
+
+    </div>
+</body>
+</html>
