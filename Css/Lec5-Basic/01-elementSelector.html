@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Selector</title>
+
+    <style>
+        div{
+            border:1px solid black;
+            width:500px;
+            height:800px;
+            background-color: antiquewhite;
+           }
+
+        h1{
+            text-align: center;
+           }
+
+        p{
+            color:antiquewhite;
+            text-align: center;
+           }
+
+        .my_first{
+           background-color:black;
+           border-radius:20px 20px 20px 20px;
+           width:350px; height:150px;
+           margin-left: 50px;
+            
+          }
+        
+        #my_second{
+            background-color:black;
+            border-radius:20px 20px 20px 20px;
+            width:350px; height:150px;
+            margin-left: 50px;
+        }
+
+    </style>
+</head>
+    <div>
+        <h1><span style="background-color: cyan;">Element Selector</span> </h1>
+          <p style="font-family:Arial, Helvetica, sans-serif ;color:red;">It provides a way to select elements based on their unique attributes, such as their ID, class, tag name, or other specific criteria.</p>
+             <mark>Selected by name:-</mark>
+                <div style="width:350px; height:150px; background-color: black; margin-left:50px; border-radius: 20px 20px 20px 20px;" >
+                    <p style="text-align:left; margin-left: 20px;" >p{</p>
+                    <p>text-align:center ;</p>
+                    <p style="color:red; text-align:center;">color : red ;</p>
+                    <p style="text-align:left;margin-left:40px;">}</p>
+                </div><br>
+   
+                 <!-- Class Selector -->
+
+             <mark>Selected by class</mark>
+                    <div class= "my_first">
+                        <p style="text-align: left;margin-left: 20px;">.my_first{</p>
+                        <p>text-align:center;</p>
+                         <p style="color:white;">color:white;</p>
+                        <p style="text-align:left; margin-left: 40px;">}</p>
+                    </div><br>
+
+                  <!-- Id Selector -->
+
+            <mark>Selected by id</mark>
+                    <div id= "my_second">
+                         <p style="text-align: left; margin-left: 20px;">.my_first{</p>
+                         <p>text-align:center;</p>
+                         <p style="color:blue;">color:black;</p>
+                         <p style="text-align:left; margin-left: 40px;">}</p>
+                    </div>
+   </div> 
+</body>
+</html>
