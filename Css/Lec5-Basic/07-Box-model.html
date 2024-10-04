@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        #container{
+            background-color: black;
+            color:greenyellow;
+            margin-left: 170px;
+        }
+
+        #margin{
+            border: 1px solid black;
+            background-color: blue;
+            width: 350px;
+            height: 330px;
+            margin-left: 70px;
+            font-size: medium;
+            text-align: center;
+            color:white;
+        }
+
+        .border{
+            border: 1px solid black;
+            background-color: orange;
+            width: 250px;
+            height: 250px;
+            margin-left: 50px;
+            margin-top: 25px;
+            text-align: center;
+            color:BLACK;
+
+        }
+
+        .padding{
+            border: 1px solid black;
+            background-color:green;
+            width: 170px;
+            height: 170px;
+            margin-left: 40px;
+            margin-top: 25px;
+            text-align: center;
+            color:white;
+
+        }
+
+        #content{
+            border: 1px solid black;
+            background-color:white;
+            width: 100px;
+            height: 100px;
+            margin-left: 35px;
+            margin-top: 15px;
+            text-align: center;
+            color:black;
+                        
+        }
+    </style>
+
+</head>
+<body>
+    <div style="border:1px solid black; width:500px; height:500px;background-color: rgba(255, 228, 196, 0.547);">
+        <h1><span id="container">Box Model</span></h1> 
+        <p>1. The box model is the basic building block of CSS.<br><br>
+            2. According to the box model concept, every element on a page is a rectangular box and may have widht, height, padding, borders, and margins.
+        </p>
+        <div id="margin">
+            MARGIN
+            <div class="border">
+                BORDER
+                <div class="padding">
+                    PADDING
+                    <div id="content">
+                       <p style="padding-top: 20px;">CONTENT</p> 
+                    </div>
+                </div>
+            </div>
+         </div>
+       </h1>
+    </div>
+</body>
+</html>
