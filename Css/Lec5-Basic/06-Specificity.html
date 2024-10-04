@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        div{
+            border:1px solid black;
+            width:400px;   
+            height:400px;
+            background-color: rgba(165, 42, 42, 0.352);
+        }
+
+        h1{
+            margin-left:110px;
+        }
+
+        /* To know about Specificity */
+
+        h3{
+            color:red; /*!important*/
+        }
+
+        .para{
+            color:blue;
+        }
+
+        #fire{
+            color:green;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1><span style="background-color:rgba(0, 255, 255, 0.537); color:rgb(255, 166, 0);">Specificity</span></h1>
+        <p>It came Because elements can have multiple CSS selectors, there is a hierarchy for for the weight given to each type of selector.
+            Here is teh logical order of selectors from least to most weight assigned:
+        </p>
+
+        <div style="width:250px; height:200px ;">
+            <h2>
+                <mark style="margin-left:50px;">High to low</mark><br>
+            </h2>  
+             <h3 id="fire" class="para" style="color:darkmagenta;">
+                1. Inline <br>
+                2. ID <br>
+                3. Class <br>
+                4. Tag Selector
+             </h3>
+             <p> Example apply on h3</p>
+        </div>
+        
+
+
+    </div>
+</body>
+</html>
