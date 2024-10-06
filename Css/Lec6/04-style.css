@@ -1,0 +1,19 @@
+div{
+    border:2px solid red;
+    width:200px;
+    height:200px;
+    display:inline-block;
+    box-sizing:border-box;
+    margin-left: 20px;
+}
+
+.box{
+    background-image: conic-gradient(red,yellow,green,white,blue);
+}
+#box{
+    background-image: repeating-conic-gradient(red 10%,yellow 20%,green 30%);
+        border-radius: 50%;
+}
+.container{
+    background-image:conic-gradient(orange 60deg, white 90deg, green 180deg ,pink 360deg);
+}
