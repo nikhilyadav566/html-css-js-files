@@ -1,0 +1,39 @@
+div{
+    border:2px solid red;
+    width:200px;
+    height:200px;
+    display:inline-block;
+    box-sizing:border-box;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box1{
+     box-shadow: 10px 10px;
+    
+    
+}
+.box2{
+    background-color: rgba(255, 0, 0, 0.792);
+    box-shadow:10px 10px 10px;
+}
+.box3{
+    background-color:rgba(255, 0, 0, 0.792);
+    box-shadow:10px 10px 10px green;
+}
+.box4{
+    background-color: rgba(255, 0, 0, 0.792);
+    box-shadow:10px 10px 10px green,20px 20px  10px red,25px 25px 10px black;
+}   
+.box5{
+    background-color:darksalmon;
+    box-shadow: 10px -10px;
+}
+.box6{
+    background-color: crimson;
+    box-shadow:-10px 10px;
+}
+.box7{
+    background-color:rgb(255, 250, 192);
+    box-shadow: -10px -10px;
+    
+}
