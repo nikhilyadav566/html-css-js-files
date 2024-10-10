@@ -1,0 +1,23 @@
+.container{
+    max-height:100px;
+    border:2px solid red;
+    width:500px;
+    display:inline-block;
+}
+
+.box{
+    margin:10px;
+    max-height:500px;
+    border:2px solid black;
+    width:500px;
+    overflow:scroll;
+    
+    
+}
+
+.mydiv{
+    margin:10px;
+    min-height:100px;
+    border:2px solid black;
+
+}
