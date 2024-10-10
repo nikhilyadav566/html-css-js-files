@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensions and Units</title>
+    <link rel="stylesheet" href="07-style.css">
+</head>
+<body>
+    <div id="dimensions">
+    <h1>Dimensions</h1>
+    <p>Dimensions are used to define the size of elements on a webpages.</p>
+    <h3>Key Properties</h3>
+    <ol>
+        <li>
+            <h4>Width and Height:</h4>
+        </li>
+            <ul>
+               <li><p>width: Sets the width of an element.<br></li>
+                   <li> height:Sets the height of an element.</li></p> 
+            </ul>
+                <pre>
+                    .box {
+                        width: 100px;
+                        height: 200px;
+                    }
+                </pre>
+            <li>
+                <h4>Max and Min Dimensions:</h4>
+            </li>
+            <ul>
+                <p>
+                    <li>max-width: Sets the maximum width of an element.<br></li>
+                    <li>min-width: Sets the minimum width of an element.<br></li>
+                    <li>max-height: Sets the maximum height of an element. <br></li>
+                    <li>min-height: Sets the minimum height of an element.</li>
+                </p>
+            </ul>
+                <pre>
+                    .container {
+                        max-width: 800px;
+                        min-height: 300px;
+                    }                    
+                </pre>
+               <li>
+                <h4>Padding and Margin:</h4>
+               </li>
+               <ul>
+                    <p>
+                      <li>padding: Space between the content and the border of an element.<br></li> 
+                      <li> margin: Space outside the border of an element.</li>
+                    </p>
+               </ul>
+               <pre>
+                .content {
+                    padding: 20px;
+                    margin: 15px;
+                }
+               </pre> 
+    </ol>       
+    </div>    
+    <div id="units">       
+        <h1>Units</h1>   
+    <ol>
+        <li>
+            <h4>Absolute Units:</h4>
+        </li>
+            <ul>
+                <p>
+                   <li>px: Pixels (fixed size).<br></li>
+                    <li>cm: Centimeters (rarely used in web design).<br></li>
+                    <li>mm: Millimeters (rarely used in web design).<br></li> 
+                    <li>in: Inches (rarely used in web design).<br></li> 
+                    <li>pt: Points (1 pt = 1/72 inch).<br></li>
+                </p>
+            </ul>
+            <li>
+                <h4>Relative Units:</h4>
+            </li>
+            <ul>
+                <p>
+                    <li>%: Percentage of the parent element's dimensions.<br></li>
+                    <li>em: Relative to the font-size of the element (1em = current font size).<br></li>
+                    <li>rem: Relative to the font-size of the root element (html).<br></li>
+                    <li>vh: Viewport height (1% of the viewport height).<br></li>
+                    <li>vw: Viewport width (1% of the viewport width).<br></li>
+                    <li>vmin / vmax: The smaller or larger value of viewport width or height.<br></li>
+                </p>
+            </ul>
+        </ol>
+    </div>    
+</body>
+</html>
