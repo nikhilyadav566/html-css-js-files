@@ -1,0 +1,10 @@
+div{
+    border:2px solid red;
+    border-radius: 15px;
+    width:490px;
+    height:850px;
+    display:inline-grid;
+    margin-top: 20px;
+    margin-left:20px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.383),rgba(0, 0, 255, 0.451));
+}
