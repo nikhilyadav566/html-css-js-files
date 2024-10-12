@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-Property</title>
+    <link rel="stylesheet" href="09-style.css">
+</head>
+<body>
+    <h1>Position Property Values</h1>
+    <div class="box" id="container">
+        <p>The CSS position property is essential for controlling the layout of elements on a web page.</p>
+            <h2><mark>1.Static</mark></h2>
+            <ul>
+               <li><p>Description: The default positioning for all elements. Elements are placed in the normal document flow.</p> </li>
+                <li><p>Effect on layout: Ignored in terms of top, right, bottom, and left properties.</p></li>
+                <li><h4>Example:</h4></li>
+            </ul>
+                <pre>
+                    .element {
+                        position: static;
+                    }                    
+                </pre>
+                <div id="static">
+                     <p>This div element has position:static<br>
+                        It is always positioned according to the normal flow of the page:
+                    </p>
+                </div>
+    </div>
+    <div class="box2" id="container">
+        <h2><mark>2.Relative</mark></h2>
+        <ul>
+            <li><p>Description: Positioned relative to its normal position in the flow of the document.</p></li>
+            <li><p>Effect on layout: Moves the element without affecting surrounding elements.</p></li>
+            <li><h4>Example:</h4></li>
+        </ul>
+        <pre>
+            .element {
+                position: relative;
+                top: 10px;  /* Moves the element down by 10px */
+                left: 20px; /* Moves the element right by 20px */
+            }            
+        </pre>
+        <div id="relative">
+            <p>This div element has position: relative<br>
+                An element with position: relative; is positioned relative to its normal position:
+            </p>
+        </div>
+    </div>
+    <div class="box3" id="container">
+        <h2><mark>3.Absolute</mark></h2>
+        <ul>
+            <li><p>Description: Positioned relative to the nearest positioned ancestor (one with a position value of anything other than static).</p></li>
+            <li><p>Effect on layout: Removed from the document flow, can overlap other elements.</p></li>
+            <li><p>Example:</p></li>
+        </ul>
+        <pre>
+            .container {
+                position: relative; /* Positioned ancestor */
+            }
+            .element {
+                position: absolute;
+                top: 0;
+                right: 0; /* Positioned in the top-right corner 
+                        of the container */
+            }            
+        </pre>
+        <div id="absolute" id="container">
+            <p>This div element has position: absolute;<br></p>
+        </div><br><br><br>
+            <p> An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+    </div>
+    <div class="box4" id="container">
+        <h2>4.Fixed</h2>
+        <ul>
+            <li>Description: Positioned relative to the viewport, meaning it stays in the same place even when the page is scrolled.</li>
+            <li>Effect on layout: Removed from the normal document flow.</li>
+            <li><h4>Example:</h4></li>
+        </ul>
+        <pre>
+            .element {
+                position: fixed;
+                bottom: 0;
+                left: 0; 
+                /* Always sticks to the bottom-left corner
+                 of the viewport */
+            }            
+        </pre>
+        <div id="fixed">
+            <p>This div element has position: fixed;</p>
+        </div>
+        <p id="fixp">This div element has position: fixed;
+            An element with position: fixed; is positioned relative to the viewport,
+             which means it always stays in the same place even if the page is scrolled:
+        </p>
+    </div>
+    <div class="box5" id="container">
+        <h2><mark>4.Sticky</mark></h2>
+        <ul>
+            <li><p>Description: The element is removed from the document flow and is positioned relative to the viewport, meaning it stays in the same position even when the page is scrolled.</p></li>
+            <li><p>Effects: It does not affect the position of other elements.</p></li>
+            <li><h4>Example;</h4></li>
+        </ul>
+        <pre>
+            .fixed-box {
+                position: fixed;
+                bottom: 10px; /* 10px from the bottom of the viewport */
+                left: 20px; /* 20px from the left of the viewport */
+              }       
+        </pre>
+        <div id="mycontainer">
+            <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+            <div id="sticky">I am sticky!</div>
+            <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+            <p>Scroll back up to remove the stickyness.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
+               Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
+               Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </div>
+    </div>
+</body>
+</html>
