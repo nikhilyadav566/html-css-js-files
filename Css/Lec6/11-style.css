@@ -1,0 +1,34 @@
+div{
+    border:2px solid black;
+    width:150px;
+    height:150px;
+    background-color:aqua;
+    display:inline-block;
+}
+.static{
+    position:static;
+    top:500px;/* No change it is default as a normal page*/
+}
+.relative{
+    position:relative;
+    top:100px;
+}
+.fixed{
+    position:fixed;
+    top:200px;
+    left:200px;
+}
+.absolute{
+    position:absolute;
+    top:100px;
+    left:450px;
+}
+.sticky{
+    position:sticky;
+    top:0px;
+}
+.wrapper{
+    width:100vw;
+    height:2000px;
+    background-color:yellow;
+}
