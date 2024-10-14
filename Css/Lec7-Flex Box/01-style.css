@@ -1,0 +1,15 @@
+.container{
+    border:2px solid green;
+    height:300px;  
+    width:500px;
+    display:flex;
+    background-color: aquamarine;
+    
+}
+
+.box{
+    border:1px solid brown;
+    background-color:aqua;
+    width:100px;
+    height:100px;
+}
