@@ -1,0 +1,36 @@
+#mydiv{
+    border:2px solid black;
+    background-color: aqua;
+    width:500px;
+    height:400px;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+}
+.box{
+    border:1px solid black;
+    background-color: blanchedalmond;
+    width:80px;
+    height:80px;
+
+}
+/* Flex-Direction:row-reverse */
+.container2{
+    display:flex;
+    flex-direction:row-reverse;
+
+}
+
+/* Flex-Direction:column */
+.container3{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Flex-Direction:row-reverse */
+.container4{
+    display:flex;
+    flex-direction: column-reverse;
+}
+
