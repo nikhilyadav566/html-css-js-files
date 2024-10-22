@@ -1,0 +1,29 @@
+.container{
+    border:2px solid black;
+    background-color:aqua;
+    height:300px;
+    display:flex;
+    /* flex-wrap:wrap; */
+    justify-content:center;
+    align-items:center;
+    align-content:flex-start;    
+}
+.box{
+    border:1px solid black ;
+    background-color:burlywood;
+    width:100px;
+    height:100px;
+    
+}
+#box1{
+    flex-shrink:6;
+}
+#box2{
+    flex-shrink:4;
+}
+#box3{
+    flex-shrink:10;
+}
+#box4{
+    flex-shrink:15;
+}
