@@ -1,0 +1,31 @@
+.container{
+    border:2px solid black;
+    background-color: aqua;
+    height:300px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:flex-start;
+    /* align-content:center; */
+
+}
+.box{
+    border:1px solid black;
+    background-color: burlywood;
+
+}
+#flexbox1{
+    align-self:flex-start;
+}
+#flexbox2{
+    align-self:flex-end;
+}
+#flexbox3{
+    align-self:center;
+}
+#flexbox4{
+    align-self:stretch;
+}
+#flexbox5{
+    align-self:last baseline;
+}
