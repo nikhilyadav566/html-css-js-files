@@ -1,0 +1,11 @@
+.container{
+    border:2px solid red;
+    box-sizing:border-box;
+    background-color: aqua;
+    /* transform:translateX(50%) translateY(50%); */
+    display:flex;
+    flex-wrap: wrap;
+    justify-items:center;
+    height:400px;
+    width:400px;
+}
