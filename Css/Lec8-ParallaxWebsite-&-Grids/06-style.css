@@ -1,0 +1,35 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+ 
+.container{
+    border:1px solid rgb(92, 42, 42);
+    background-color: rgb(184, 178, 178);
+    height:400px;
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+    gap:10px;
+
+}
+
+.box{
+    border:2px solid black;
+    background-color:aqua;
+     /* height:80px; */
+    /* width:80px; */ 
+}
+
+#box1{
+    grid-column-start:1;
+    grid-column-end:3;
+
+}
+#box3{
+    grid-row-start:2;
+    grid-row-end:4;
+}
