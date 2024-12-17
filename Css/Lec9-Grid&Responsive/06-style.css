@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    border:1px solid red;
+    background-color:aqua;
+    height:800px;
+
+    display:grid;
+    grid-gap:10px;
+
+    grid-auto-columns:minmax(100px,auto);
+    grid-template-columns:repeat(3,1fr);
+
+
+}
+
+.box{
+    border:2px solid rgb(0, 0, 0);
+    background-color:yellow;
+    /* height:100px;
+    width:100px; */
+}
