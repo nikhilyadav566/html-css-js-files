@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.container{
+    border:1px solid black;
+    background-color:yellow;
+    height:500px;
+
+    display:grid;
+    grid-gap:10px;
+
+    grid-auto-rows:minmax(100px, auto);
+    grid-template-columns:repeat(4 ,1fr);
+
+    /* grid-auto-columns:(50px,auto);
+    grid-template-columns:repeat(4,1fr); */
+
+
+}
+
+.box{
+    border:2px solid black;
+    background-color:aqua;
+    /* height:100px;
+    width:100px;
+     */
+}
