@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    border:1px solid red;
+    background-color:yellow;
+    height:600px;
+    display:grid;
+    grid-template:repeat(2,100px)/ repeat(2,100px);
+    place-self:center;
+
+}
+
+.box{
+    border:2px solid black;
+    background-color:aqua;
+
+}
