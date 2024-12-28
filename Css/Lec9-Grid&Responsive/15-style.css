@@ -1,0 +1,43 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+.container{
+    border:1px solid red;
+    background-color:yellow;
+    height:700px;
+    width:750px;
+    display:grid;
+    grid-template-rows:30px 1fr 1fr 30px;
+    grid-template-columns:1fr;
+    grid-gap:3px;
+
+    grid-template-areas:
+    "hd" 
+    "side"
+    "main"
+    "ft" ;
+}
+
+.box{
+    border:2px solid red;
+    background-color:aqua;
+}
+
+#header{
+    grid-area:hd;
+}
+
+#sidebar{
+    grid-area:side;
+}
+
+#content{
+    grid-area:main;
+}
+
+#footer{
+    grid-area:ft;
+}
