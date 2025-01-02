@@ -1,0 +1,39 @@
+*div{ 
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    border:5px solid red;
+    background-color:green;
+    height:500px;
+    width:500px;
+    display:flex;
+
+
+}
+
+.box{
+    border:2px solid orange;
+    background-color:aqua;
+    height:150px;
+    width:150px;
+    margin:20px;
+
+    /* transition-property:background-color; */
+    /* transition:2s; */
+    /* transition-delay:3s; */
+
+    /* transition:transform 1s ease 2s; */
+    transition:all 5s ease 1s;
+
+}
+
+.box:hover{
+    background-color:brown;
+    transform:scale(3) translateX(500px) rotate(360deg);
+
+}
+
