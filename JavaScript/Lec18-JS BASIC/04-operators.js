@@ -30,9 +30,9 @@ console.log(h);
 // console.log(++x);  
 // now it's value will be 11.
 
-// b. Post-incremetn :- It means users should be first use the value and after it increment the value.
+// b. Post-increment :- It means users should be first use the value and after it increment the value.
 // ex:- let a = 21;
-// console.log(x++);
+// console.log(a++);
 // now it's value will be 21 but after it's value will be increment .
 // and if right now print once more then will it's value will be increase and become 22.
 // console.log(a);
@@ -51,10 +51,10 @@ let ans2 =(x++)*(--y);
 let ans3 =(x++)*(y--);
 let ans4 =(++x)*(y--);
 
-console.log(ans1);
-console.log(ans2);
-console.log(ans3);
-console.log(ans4);
+console.log(ans1);     // 54
+console.log(ans2);     //  48
+console.log(ans3);      //  56
+console.log(ans4);      //  63
 
 
 
