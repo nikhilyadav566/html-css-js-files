@@ -23,8 +23,17 @@ let square={
     console.log(rectangle.length);
     console.log(rectangle.breadth);
     console.log(square.draw);
-    console.log(square.draw());
-
+    square.draw();
 // All these process is known as Object Oriented Programming.
 
 //  Objects have both [properties and behaviour]. otherwise there is no any way to create object without it.
+
+
+// Output :->    1
+//               2
+
+//             draw: function(){         
+//        console.log('drawing square');
+//           }  
+
+//          drawing square
