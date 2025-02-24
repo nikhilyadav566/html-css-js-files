@@ -5,27 +5,56 @@
 
 
   //  Now, There are four location where we can insert.
-  //   1.  beforebegin      ->   It insert HTML text as previous sibling.       
-  //   2.  afterbegin       ->   It insert HTML text as child.
-  //   3.  before end       ->   
-  //   4.  after end
+  //   1.  beforebegin      ->   Inserts before the parent element itself.
+  //   2.  afterbegin       ->   Inserts at the beginning inside the parent.
+  //   3.  before end       ->   Inserts at the end inside the parent (this is what you're using).
+  //   4.  after end        ->   Inserts after the parent element itself.
+ 
 
 
-  let parent = document.querySelector('#list');
-// console.log(parent);
+   //  Suppose it is given in html file
 
-// Create Child 
-let child1 = document.createElement('li');
-let content1 = document.createTextNode("Before End");
-child1.appendChild(content1);
+    // <div id="container">
+    //    <p>Existing Paragraph</p>
+    // </div>
 
-// As a Element we can send our element 
-parent.insertAdjacentElement('beforeend',child1);
+    // js code.
+
+    let parent = document.querySelector('#container'); // Selecting the parent element
+
+    let newElement1 = document.createElement('p'); // Creating a new <p> element
+    newElement1.textContent = 'Before Begin'; 
+    // Inserting before the parent element (outside)
+    parent.insertAdjacentElement('beforebegin', newElement1);
 
 
-let child2 = document.createElement('li');
-let content2 = document.createTextNode("Before Begin");
-child2.appendChild(content2);
+    let newElement2 = document.createElement('p');
+    newElement2.textContent = 'After Begin';
+    // Inserting at the beginning (as the first child inside parent)
+    parent.insertAdjacentElement('afterbegin', newElement2);
+    
 
-// As a HTML Send - using string 
-parent.insertAdjacentHTML('beforebegin','<li>Before Begin</li>');
+   let newElement3 = document.createElement('p');
+   newElement3.textContent = 'Before End';
+   // Inserting at the end (as the last child inside parent)
+   parent.insertAdjacentElement('beforeend', newElement3);
+
+   let newElement4 = document.createElement('p');
+   newElement4.textContent = 'After End';
+
+   // Inserting after the parent element (outside)
+   parent.insertAdjacentElement('afterend', newElement4);
+
+
+
+//  Output:
+
+/* <p>Before Begin</p>  <!-- Inserted before the parent (outside) -->
+
+<div id="container">
+    <p>After Begin</p>   <!-- Inserted at the beginning inside the parent -->
+    <p>Existing Paragraph</p>
+    <p>Before End</p>   <!-- Inserted at the end inside the parent -->
+</div>
+
+<p>After End</p>  <!-- Inserted after the parent (outside) --> */
