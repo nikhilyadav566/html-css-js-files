@@ -28,4 +28,4 @@ let content2 = document.createTextNode("Before Begin");
 child2.appendChild(content2);
 
 // As a HTML Send - using string 
-parent.insertAdjacentHTML('beforebegin','<li>BEfore Begin</li>');
+parent.insertAdjacentHTML('beforebegin','<li>Before Begin</li>');
