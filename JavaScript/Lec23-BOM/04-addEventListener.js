@@ -3,8 +3,18 @@
 //     =>     Respond to events
 //     =>     Hook into events.
 
-//    windows :-> It is a global object 
-//    event-target : -> It is an interface 
+//    Windows :-> It is a global object 
+//    Event-Target : -> EventTarget is an interface in JavaScript that allows elements, documents, and other objects to handle events.
+//      It provides methods like addEventListener(), removeEventListener(), and dispatchEvent() to work with events
+
+//   Interface :-> An interface is a blueprint that defines what methods or properties an object should have,
+//                  but it does not provide the actual implementation.
+
+//   An interface tells what will happen (what methods or properties an object must have), but not how it will happen (the actual implementation).
+
+//    Imagine a gaming controller :
+//    It has buttons: Jump, Run, Shoot (these are like methods in an interface).
+//    But each game decides what happens when you press them (this is the implementation).
 
 //  Pseudocode for apply Event
 
