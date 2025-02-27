@@ -18,5 +18,3 @@ document.querySelector('h5').addEventListener('dblclick',function(event){
     event.target.style.color = "red";
     event.target.style.backgroundColor="gray";
 },false);
-
-//        3rd Method

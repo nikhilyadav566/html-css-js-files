@@ -8,6 +8,9 @@
   //   in simple word:-> Event function run on target item.
 
 
+//    The event moves in Capturing and Bubbling Phases, (towards down and up directiion)
+//      but in the Target Phase, it stops and executes the event at that element.
+
   //  1st Method
   let para = document.querySelector('.first');
 

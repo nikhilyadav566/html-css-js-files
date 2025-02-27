@@ -26,7 +26,13 @@ if(paragraph){
 
 //   note : -> true value is used in captured pahase to capture. it is an argument.
 //    a.  The third argument (true) ensures the event is handled in the capturing phase (instead of the default bubbling phase).
-//    b.  The event starts at the window and trickles down through parent elements until it reaches the <p> tag.
+//    b.  The event starts at the window and trickles down through parent elements until it reaches the <p>.
+
+//     After applying an event on an event target in a document, we also use a function to define what happens after the event occurs.
+//              That function is called an event handler.
+//           PROCESS OF EXECUTION.
+//     The click event starts from window → travels down the DOM tree → reaches <p> which is used in html file.
+//     The event is captured at <p> because we used true.
 
 //   2nd Method
 
@@ -48,3 +54,24 @@ document.querySelector('span').addEventListener('click',function(event){     // 
 //  Note :-> true is necessary to used in Capturing Phase.
 
 
+
+//   NOTE :-> structure of dom tree like this work
+
+// <!DOCTYPE html>
+// <html>
+// <head>
+//     <title>DOM Tree Example</title>
+// </head>
+// <body>
+//     <div id="parent">
+//         <p class="child">Hello, Nikhil!</p>
+//     </div>
+// </body>
+// </html>
+
+
+//  1️⃣ When an event occurs (like a click), it starts at the top of the DOM tree (document).
+//  2️⃣ It moves downward (Capturing Phase) until it reaches the Target Element (event.target).
+//  3️⃣ If capturing is enabled (true), it executes the event handler in the capturing phase.
+//  4️⃣ At the Target Element, the event stops (Target Phase), and the event runs at that element.
+//  5️⃣ Then, it moves back up (Bubbling Phase) if bubbling is enabled (default behavior).
