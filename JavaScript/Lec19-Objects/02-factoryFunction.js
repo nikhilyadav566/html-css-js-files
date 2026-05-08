@@ -61,3 +61,6 @@
     
     car1.start();           // Output: Tesla is starting...
     car2.start();          // Output: Ford is starting...
+
+
+//  First one: Factory function with fixed values.

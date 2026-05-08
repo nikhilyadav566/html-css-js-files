@@ -1,3 +1,5 @@
+// Second one: Factory function with dynamic/custom values using parameters.
+
 function createMarks(maths , science){
         return {
             maths,

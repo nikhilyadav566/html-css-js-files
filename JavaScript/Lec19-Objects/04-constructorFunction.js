@@ -1,8 +1,8 @@
-//  constructor function: -> Pascal Notation -> first letter of every word is Capital -> NumberOfStudents
+//  constructor function: -> Pascal Notation -> first letter of every word should be in Capital -> NumberOfStudents
 //  constructor function -> prop/methods -> intialise/Define
 
 function Rectangle(){
-    this.lenght=1;
+    this.length=1;
     this.breadth=2;       //  this keyword is refering to show current object.
     
     this.draw=function(){
@@ -13,7 +13,7 @@ function Rectangle(){
 // object creation using constructor function .
 let rectangleObject = new Rectangle();    // new :-> it is such type of keyword which return empty object.
 
-console.log(rectangleObject.lenght);
+console.log(rectangleObject.length);
 console.log(rectangleObject.breadth);
 rectangleObject.draw();
 
