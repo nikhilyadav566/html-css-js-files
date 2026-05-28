@@ -10,7 +10,9 @@
 let lastName = 'Yadav';
 console.log(typeof lastName);    //  Output: string
 
-// We can convert String primitive to String object by using .dot notation like as (.length , .endWith() etc).
+// String primitive is not an object, but JavaScript automatically
+// wraps it in a temporary String object when we use below methods or properties.
+
 console.log(lastName.length);                //  5
 console.log(lastName[0]);                    // here 0 zero is index no.
 console.log(lastName.includes(`dav`));            // true  include: that (dav) is present in lastName or not.
@@ -26,6 +28,7 @@ console.log(lastName.replace(`av`,`uvanshi`));   // Here in Yadav (av) letter re
 
 
 //  2. String Object 
+//   A string object is created using the new String() constructor.
 
 // typeof firstName: The variable firstName is assigned a String object using the new String() constructor.
 //  Unlike a string primitive, this creates a complex object that wraps the primitive value.

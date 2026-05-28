@@ -23,7 +23,7 @@ console.log(students);
 
 
 
-let studentName = students.find(function(student){    //  find() is a function and inside it there is a callback function i.e 'function(student)' which is passed inside the find() or function where student is a parameter of callback function.
+let studentName = students.find(function(student){    //  find() is an array method and inside it there is a callback function i.e 'function(student)' which is passed inside the find() or student is the parameter of the callback function, which receives each array object one by one.
     return student.name == 'Nikhil';      
 
 });

@@ -23,7 +23,7 @@ let num = arr.forEach(function(number){
 
 let marks =[45,60,90,85,75];
 
-let mrks = marks.forEach(studentmark=> console.log(studentmark));
+let mrks = marks.forEach((studentmark)=> console.log(studentmark));
 // Output :
 // 45 
 // 60 

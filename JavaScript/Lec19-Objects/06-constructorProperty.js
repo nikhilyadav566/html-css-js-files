@@ -1,6 +1,9 @@
 //  Actually Objects in js have their property that is called constructor property.
 //  And every object has constructor
 //  Function is also an object.
+//  Factory function → object created manually
+//  Constructor function → object created automatically by new
+//  A function that is intended to create objects using the new keyword, where JavaScript automatically creates the object and binds this to it.
 
 
 function Rectangle(len , bre){

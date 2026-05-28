@@ -2,6 +2,9 @@
 //             All function declaration Comes at top of file is called "Hoisting".
 //             Which is done by JS engine automatically.
 
+// hoisting is the process of moving function declaration to the top of the file which happend automatically
+
+
 
 run();            //  here call function
 
@@ -23,6 +26,6 @@ function add(x,y){
     return sum;
 };
 
-let addition = add(2,5);     //  // Invoke the function and store the result in the 'addition' variable.
+let addition = add(2,5);     //   Invoke the function and store the result in the 'addition' variable.
 console.log(addition);     //  Output: -> 7
 

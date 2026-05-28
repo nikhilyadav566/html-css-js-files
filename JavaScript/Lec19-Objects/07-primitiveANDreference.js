@@ -5,6 +5,7 @@
 
 
 //  1. Primitive types :- These are basic, immutable data types that store their values directly in variable.And it is copied by value.
+//   Immutable means: cannot be changed after creation.
 
 
 let a = 10;

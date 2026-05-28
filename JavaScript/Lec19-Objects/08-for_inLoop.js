@@ -8,7 +8,7 @@
  //  for-in loop
  for(let key in rectangle){
   // keys are reflected through key variable
-  // keys are reflected throught rectangle[key]
+  // values are reflected throught rectangle[key]
    console.log(key , rectangle[key]);
  }
 

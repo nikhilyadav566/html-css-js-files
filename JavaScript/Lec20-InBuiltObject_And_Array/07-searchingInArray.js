@@ -4,7 +4,7 @@
 //  1. .indexOf()                     2.  .includes()
 
 
-
+// "To find at which index this value is"
 let numbers = [4,6,7,8];
 
 console.log(numbers.indexOf(7));  // 2
@@ -14,6 +14,7 @@ console.log(numbers.indexOf(15));  // -1
 
 
 //  we want to check if a number exist in an array.
+//  means To find the value is present or not 
 
 // numbers.includes(6);
 console.log(numbers.includes(6));     // true

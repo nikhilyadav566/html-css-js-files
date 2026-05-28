@@ -8,7 +8,7 @@ let rectangle={
 };
 
 // Object.keys() :-> it gives array of keys
-for(let key of Object.keys(rectangle)){   // here Object.keys(rectangle) returns an array of the object's keys: ['length','breadth'] because it store group of  datatypes.
+for(let key of Object.keys(rectangle)){   // here Object.keys(rectangle) returns an array of the object's keys: ['length','breadth','name'] because it store group of  datatypes.
     console.log(key);
 }
 
