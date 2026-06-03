@@ -15,7 +15,7 @@ let person = {
         return `${person.fName} ${person.lName}`;
     },
     set fullName(value){                     //   Setter (set):-> A setter is a method used to update the value of a property. It is called when you assign a value to the property.
-        let parts = value.split(' ');        //  Pupose :-> To validate, process, or split the value begin set before updating teh internal property.
+        let parts = value.split(' ');        //  Pupose :-> To validate, process, or split the value begin set before updating the internal property.
         this.fName = parts[0];
         this.lName = parts[1];  
     }
@@ -35,10 +35,10 @@ let student={
         return`${this.name} ${this.result} ${this.grade}`;   //  this :-> it represent current object.
     },
 
-    set studentDetails(value){
-        let std = value.split(' ');   //  here split value on the basis of ' '. After it (std) will be an array[Abhishek, Pass, A]
+    set studentDetails(value){        // .split() method convert string into array
+        let std = value.split(' ');   //  here split value on the basis of ' '. After it (std) will be in array[Abhishek, Pass, A]
         this.name = std [0];             //  then we can get and update in their  values on the basis of index no.
-        this.result = std[1];         //  this : -> it represent current object.(studens) 
+        this.result = std[1];         //  this : -> it represent current object.(students) 
         this.grade = std[2];
     }
 };
