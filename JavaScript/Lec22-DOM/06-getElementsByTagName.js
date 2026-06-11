@@ -5,5 +5,5 @@
 //      It is called on document.
 
 
-let element = document.getElementById('Web-development');
+let element = document.getElementByTagName('Web-development');
   console.log(element);

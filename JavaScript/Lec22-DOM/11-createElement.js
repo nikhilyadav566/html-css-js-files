@@ -4,5 +4,5 @@ let content = document.createTextNode("This is Heading");  // create text which 
 newElement.appendChild(content);   // Insert the text node inside the <h1> element
 console.log(newElement)       //  now prints it
 
-//  Out will be 
+//  Output will be 
 //  <h1> This is Heading </h1>

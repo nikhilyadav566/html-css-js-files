@@ -12,15 +12,50 @@
 //  1.   Get an element / all of its descended means(hierarchical) HTML content.
 //  2.   Set an element's HTML content.
 
+//    HTML Structure
 
-//  Retrieve and log the HTML content
+    // <div class="code-example">
+    //     <h1>Welcome</h1>
+    //     <p>This is a paragraph.</p>
+    // </div>
+
+// Now by the using of .innerHTML we retrive these codes
+
+// innerHTML
+
+// Select the element
 let codingEX = document.querySelector('.code-example');
-  console.log(codingEX.innerHTML);      // Here we retrieve (get) the HTML content of the `.code-example` element.
 
-// Output 
-/* <li><a href="#">Item 1</a></li>
-<li><a href="#">Item 2</a></li>
-<li><a href="#" style="display:none;">Item 3</a></li> */
+// Get the content inside the element
+console.log(codingEX.innerHTML);
 
-codingEX.innerHTML = ' '   // Here we set (update) the HTML content to an empty string.
-                    //  output : ' '
+/*
+Output:
+<h1>Welcome</h1>
+<p>This is a paragraph.</p>
+*/
+
+// Replace only the content inside the div
+codingEX.innerHTML = '<h2>Hello Nikhil</h2>';
+
+
+// Before
+
+/* 
+<div class="code-example">
+    <h1>Welcome</h1>
+    <p>This is a paragraph.</p>
+</div> */
+
+
+// After
+
+/*
+<div class="code-example">
+    <h2>Hello Nikhil</h2>
+</div> */
+
+
+// The <div> remains.
+
+//  NOTE:-> innerHTML - Only the content inside the element affects.
