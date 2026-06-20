@@ -19,11 +19,14 @@
 
 //    For example, if you click a button on a webpage, the button is the event target because it is the thing that received the click event.
 
-document.querySelector('button');
-document.addEventListener('click',function(){
-    document.body.style.backgroundColor = "orange";
-});
+document.querySelector('button')  // find/access the first button on the page
+    .addEventListener('click', function () {   // attach click event to the button
+        alert('clicked');
+        document.body.style.backgroundColor = "orange";
+    });
 
-document.addEventListener('dblclick',function(){
-    alert('Hii Welcome to my webpage' );
+// document represents the whole HTML page
+
+document.addEventListener('dblclick', function () {  // attach dblclick event to the whole page
+    alert('Hii Welcome to my webpage');
 });

@@ -51,8 +51,10 @@ document.querySelector('span').addEventListener('click',function(event){     // 
 },true);
 
 
-//  Note :-> true is necessary to used in Capturing Phase.
-
+// Note :-> true enables Capturing Phase.
+//
+// Without true,
+// addEventListener() uses Bubbling Phase by default.
 
 
 //   NOTE :-> structure of dom tree like this work
@@ -69,9 +71,48 @@ document.querySelector('span').addEventListener('click',function(event){     // 
 // </body>
 // </html>
 
-
-//  1️⃣ When an event occurs (like a click), it starts at the top of the DOM tree (document).
+//  1️⃣ When an event occurs, the event flow starts from window,then document, then html, body, and continues down to the target element.
 //  2️⃣ It moves downward (Capturing Phase) until it reaches the Target Element (event.target).
 //  3️⃣ If capturing is enabled (true), it executes the event handler in the capturing phase.
-//  4️⃣ At the Target Element, the event stops (Target Phase), and the event runs at that element.
-//  5️⃣ Then, it moves back up (Bubbling Phase) if bubbling is enabled (default behavior).
+//  4️⃣ At the Target Element, the Target Phase occurs.
+//  5️⃣ After the Target Phase,the event normally continues into the Bubbling Phase.
+
+
+// Downward  → Capturing Phase
+// At Target → Target Phase
+// Upward    → Bubbling Phase
+
+
+// Another Example Simple way Understand it
+
+let parent = document.querySelector('#parent');
+let btn = document.querySelector('#btn');
+
+parent.addEventListener('click', function(){
+    console.log('Parent');
+}, true);
+
+btn.addEventListener('click', function(){
+    console.log('Button');
+});
+
+//  output 
+//        Parent
+//        Button
+
+// because capturing runs first
+
+//  If true is remove.
+
+parent.addEventListener('click', function(){
+    console.log('Parent');
+});
+
+btn.addEventListener('click', function(){
+    console.log('Button');
+});
+
+// Output :
+// Button 
+// Parent
+// because bubbling is the default
