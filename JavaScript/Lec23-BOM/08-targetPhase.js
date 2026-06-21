@@ -38,3 +38,5 @@
   //  Note:-> event.target refers to the element
   //  But The body property is part of the document object, not individual HTML elements.
   //  so to change body background we have to use document to change body background color instead of event.target .
+
+  // define:-> The Target Phase is the phase in which the event reaches the actual element that triggered the event.

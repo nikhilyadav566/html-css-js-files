@@ -116,3 +116,6 @@ btn.addEventListener('click', function(){
 // Button 
 // Parent
 // because bubbling is the default
+
+// Define:- Capturing Phase is the phase in which the event travels from the top of the DOM tree (document) down toward the target element before reaching it.
+//             document ↓ html ↓ body ↓ parent ↓ target

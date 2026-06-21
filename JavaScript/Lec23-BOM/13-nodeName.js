@@ -4,16 +4,20 @@
 //            let p = document.createElement('p');
 //            console.log(p.nodeName);  // Output: "P"
 
+//         document.createElement('div').nodeName  // Output: DIV
+//         document.createElement('span').nodeName  // SPAN
+
 //      The value returned by the nodeName property is always in uppercase for HTML elements. 
 //      This is because nodeName refers to the node name in the DOM (Document Object Model), 
 //          and DOM node names are case-insensitive but standardized to uppercase.
 
 
+// It is  based upon event Delegation example
+
 let element = document.querySelector('#wrapper');
 
 element.addEventListener('click',function(event){
-    if(event.target.nodeName === "SPAN"){    //   The tag which is used in html file same name will be used but should be uppercase.
-        console.log("Span clicked");
+    if(event.target.nodeName === "SPAN"){           //   nodeName returns the HTML tag name in UPPERCASE.
         alert("Span clicked");
     }
     else if(event.target.nodeName ==="P"){       //  here used for paragraph 
