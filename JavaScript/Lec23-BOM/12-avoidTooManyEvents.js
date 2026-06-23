@@ -1,6 +1,6 @@
 //    Avoid too many events:->
-//            instead of giving individual element give parent element event.
-
+//           Instead of attaching event listeners to individual child elements,
+//                  attach a single event listener to their parent element.
 
 let myDiv = document.createElement('div');    // create <div> element in memory but does not add it to the page yet.
 
