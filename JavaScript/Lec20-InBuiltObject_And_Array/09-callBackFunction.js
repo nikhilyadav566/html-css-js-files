@@ -34,3 +34,4 @@ let studentName = students.find(function(student){    //  find() is an array met
   //      In the callback, we check if the name property of the student object is equal to 'Nikhil'.
  //       find() will return the first match (if found) or undefined if no match is found.
  
+// More study about this in Lec24EventLoop folder
